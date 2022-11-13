@@ -19,3 +19,9 @@ try:
     f = open('backup.conf', 'x')
     f.write(output)
     f.close()
+except (AuthentionException):
+    print("An aunthentication error occured while connecting to:" + device[ip])
+except (ssh_exception):
+    print("An error occured while connecting to device " + device[ip] + "via ssh. Is SSH enabled?")
+except (NetMikoTimeoutException):
+    print("The device " = device[ip] + " timed out when attempting to connect")
