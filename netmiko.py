@@ -1,4 +1,4 @@
-from netmiko import ConnectHandler
+from netmiko.ConnectHandler
 from getpass import getpass
 
 USERNAME = input("Please enter your SSH username: ")
